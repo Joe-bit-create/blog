@@ -1658,6 +1658,16 @@ pre .javascript .function {
 .rtl.post-title {
   font-family: UKIJ Ekran;
 }
+.post-body p a {
+  color: #ff69b4;
+  border-bottom: none;
+  border-bottom: 1px solid #f0f;
+}
+.post-body p a:hover {
+  color: #ffd700;
+  border-bottom: none;
+  border-bottom: 1px solid #daa520;
+}
 .sidebar {
   position: fixed;
   right: 0;
@@ -1822,7 +1832,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #d177ff;
+  background: #a404a6;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2615,6 +2625,15 @@ embed {
   padding: 5px;
   max-width: 150px;
   background: #fff;
+  border-radius: 50%;
+  transition: 2.5s all;
+}
+.custom-logo-image:hover {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 @media (max-width: 767px) {
   .site-nav {
