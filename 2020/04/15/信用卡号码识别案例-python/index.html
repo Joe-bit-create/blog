@@ -119,7 +119,7 @@
 
 
 
-  <meta name="keywords" content="makefile," />
+  <meta name="keywords" content="-python -opencv," />
 
 
 
@@ -130,16 +130,16 @@
 
 
 
-<meta name="description" content="makefile编写makefile基本格式12target : dependencies                command target:生成的目标文件 dependencies:目标文件所依赖文件 command:执行命令 例： 12main: main.c            gcc main.c -o main  多个文件编译123456main : main.c test.">
+<meta name="description" content="信用卡号码识别直接上代码，视频链接（讲得很全面，而且声音很好听～） utils1234567891011121314import cv2def sort_contours(cnts, method&#x3D;&#39;left-to-right&#39;):    reverse &#x3D; False    i &#x3D; 0    if method &#x3D;&#x3D; &#39;r">
 <meta property="og:type" content="article">
-<meta property="og:title" content="makefile编写">
-<meta property="og:url" content="http://yoursite.com/2020/04/15/makefile%E7%BC%96%E5%86%99/index.html">
+<meta property="og:title" content="信用卡号码识别案例(python)">
+<meta property="og:url" content="http://yoursite.com/2020/04/15/%E4%BF%A1%E7%94%A8%E5%8D%A1%E5%8F%B7%E7%A0%81%E8%AF%86%E5%88%AB%E6%A1%88%E4%BE%8B-python/index.html">
 <meta property="og:site_name" content="MyBlog">
-<meta property="og:description" content="makefile编写makefile基本格式12target : dependencies                command target:生成的目标文件 dependencies:目标文件所依赖文件 command:执行命令 例： 12main: main.c            gcc main.c -o main  多个文件编译123456main : main.c test.">
-<meta property="article:published_time" content="2020-04-15T07:35:31.000Z">
-<meta property="article:modified_time" content="2020-04-15T08:16:40.630Z">
+<meta property="og:description" content="信用卡号码识别直接上代码，视频链接（讲得很全面，而且声音很好听～） utils1234567891011121314import cv2def sort_contours(cnts, method&#x3D;&#39;left-to-right&#39;):    reverse &#x3D; False    i &#x3D; 0    if method &#x3D;&#x3D; &#39;r">
+<meta property="article:published_time" content="2020-04-15T08:26:50.000Z">
+<meta property="article:modified_time" content="2020-04-15T08:52:08.767Z">
 <meta property="article:author" content="Joe">
-<meta property="article:tag" content="makefile">
+<meta property="article:tag" content="-python -opencv">
 <meta name="twitter:card" content="summary">
 
 
@@ -170,13 +170,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2020/04/15/makefile编写/"/>
+  <link rel="canonical" href="http://yoursite.com/2020/04/15/信用卡号码识别案例-python/"/>
 
 
 
 
 
-  <title>makefile编写 | MyBlog</title>
+  <title>信用卡号码识别案例(python) | MyBlog</title>
   
 
 
@@ -320,7 +320,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/04/15/makefile%E7%BC%96%E5%86%99/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/04/15/%E4%BF%A1%E7%94%A8%E5%8D%A1%E5%8F%B7%E7%A0%81%E8%AF%86%E5%88%AB%E6%A1%88%E4%BE%8B-python/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Joe">
@@ -337,7 +337,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">makefile编写</h1>
+          <h1 class="post-title" itemprop="name headline">信用卡号码识别案例(python)</h1>
         
 
         <div class="post-meta">
@@ -349,7 +349,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-04-15T15:35:31+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-04-15T16:26:50+08:00">
                 2020-04-15
               </time>
             
@@ -387,26 +387,9 @@
       
 
       
-        <h1 id="makefile编写"><a href="#makefile编写" class="headerlink" title="makefile编写"></a>makefile编写</h1><h2 id="makefile基本格式"><a href="#makefile基本格式" class="headerlink" title="makefile基本格式"></a>makefile基本格式</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">target : dependencies</span><br><span class="line">                command</span><br></pre></td></tr></table></figure>
-<p>target:生成的目标文件</p>
-<p>dependencies:目标文件所依赖文件</p>
-<p>command:执行命令</p>
-<p>例：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">main: main.c</span><br><span class="line">            gcc main.c -o main</span><br></pre></td></tr></table></figure>
-
-<h2 id="多个文件编译"><a href="#多个文件编译" class="headerlink" title="多个文件编译"></a>多个文件编译</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">main : main.c test.o tool.o</span><br><span class="line">            gcc main.c test.o tool.o -o main</span><br><span class="line">test.o : test.c</span><br><span class="line">            gcc -c test.c</span><br><span class="line">tool.o : tool.c</span><br><span class="line">            gcc -c tool.c</span><br></pre></td></tr></table></figure>
-
-<p>makefile从第一个可执行文件开始编译，根据依赖的文件向下寻找可依赖文件进行编译，如果需要生成多个可执行文件</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">all : main_1 main_2</span><br><span class="line"></span><br><span class="line">main_1:main_1.c test.o</span><br><span class="line">            gcc main_1.c test.o -o main_1</span><br><span class="line"></span><br><span class="line">main_2:main_2 tool.o</span><br><span class="line">            gcc main_2.c tool.o -o main_2</span><br><span class="line"></span><br><span class="line">test.o : test.c</span><br><span class="line">            gcc -c test.c</span><br><span class="line">tool.o : tool.c</span><br><span class="line">            gcc -c tool.c</span><br></pre></td></tr></table></figure>
-
-<h2 id="删除-o文件和可执行程序"><a href="#删除-o文件和可执行程序" class="headerlink" title="删除.o文件和可执行程序"></a>删除.o文件和可执行程序</h2><p>在makefile最后加入</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">clean:</span><br><span class="line">        rm *.o main</span><br></pre></td></tr></table></figure>
-<p>在终端中输入</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">make clean</span><br></pre></td></tr></table></figure>
-
-<h2 id="设置变量"><a href="#设置变量" class="headerlink" title="设置变量"></a>设置变量</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">CC &#x3D; gcc</span><br><span class="line"></span><br><span class="line">main : main.c test.o tool.o</span><br><span class="line">            $(CC) main.c test.o tool.o -o main</span><br><span class="line">test.o : test.c</span><br><span class="line">            $(CC) -c test.c</span><br><span class="line">tool.o : tool.c</span><br><span class="line">            $(CC) -c tool.c</span><br></pre></td></tr></table></figure>
-
-<p>用CC代替gcc，如果需要修改只要修改CC这个变量就可以了</p>
+        <h1 id="信用卡号码识别"><a href="#信用卡号码识别" class="headerlink" title="信用卡号码识别"></a>信用卡号码识别</h1><p>直接上代码，<a href="https://www.bilibili.com/video/BV1b741117vN?from=search&seid=1918678009416571276" target="_blank" rel="noopener">视频链接</a>（讲得很全面，而且声音很好听～）</p>
+<h2 id="utils"><a href="#utils" class="headerlink" title="utils"></a>utils</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">import cv2</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def sort_contours(cnts, method&#x3D;&#39;left-to-right&#39;):</span><br><span class="line">    reverse &#x3D; False</span><br><span class="line">    i &#x3D; 0</span><br><span class="line">    if method &#x3D;&#x3D; &#39;right-to-left&#39; or method &#x3D;&#x3D; &#39;bottom-to-top&#39;:</span><br><span class="line">        reverse &#x3D; True</span><br><span class="line">    if method &#x3D;&#x3D; &#39;top-to-bottom&#39; or method &#x3D;&#x3D; &#39;bottom-to-top&#39;:</span><br><span class="line">        i &#x3D; 1</span><br><span class="line">    boundingboxes &#x3D; [cv2.boundingRect(c) for c in cnts]</span><br><span class="line">    (cnts, boundingboxes) &#x3D; list(zip(*sorted(list(zip(cnts, boundingboxes)), key&#x3D;lambda b: b[1][i], reverse&#x3D;reverse)))</span><br><span class="line">    #zip 方法在 Python 2 和 Python 3 中的不同：在 Python 3.x 中为了减少内存，zip() 返回的是一个对象。如需展示列表，需手动 list() 转换。</span><br><span class="line">    return cnts, boundingboxes</span><br></pre></td></tr></table></figure>
+<h2 id="主程序"><a href="#主程序" class="headerlink" title="主程序"></a>主程序</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br></pre></td><td class="code"><pre><span class="line">import cv2</span><br><span class="line">import numpy as np</span><br><span class="line">import utils</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def cv_show(name, img):</span><br><span class="line">    cv2.imshow(name, img)</span><br><span class="line">    cv2.waitKey(0)</span><br><span class="line">    cv2.destroyAllWindows()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#读取模板</span><br><span class="line">img &#x3D; cv2.imread(&#39;1.png&#39;)</span><br><span class="line">cv_show(&#39;img&#39;, img)</span><br><span class="line">#灰度图</span><br><span class="line">ref &#x3D; cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)</span><br><span class="line">cv_show(&#39;ref&#39;, ref)</span><br><span class="line">#阈值处理</span><br><span class="line">ref &#x3D; cv2.threshold(ref, 10, 255, cv2.THRESH_BINARY_INV)[1]</span><br><span class="line">cv_show(&#39;ref&#39;, ref)</span><br><span class="line">#计算轮廓</span><br><span class="line">refCnt, hie &#x3D; cv2.findContours(ref.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)</span><br><span class="line">cv2.drawContours(img, refCnt, -1, (0, 0, 255), 3)</span><br><span class="line">cv_show(&#39;img&#39;, img)</span><br><span class="line">print(np.array(refCnt).shape)</span><br><span class="line">refCnt, cnt_c &#x3D; utils.sort_contours(refCnt, method&#x3D;&#39;left-to-right&#39;)</span><br><span class="line">print(np.array(refCnt).shape)</span><br><span class="line">print(np.array(cnt_c).shape)</span><br><span class="line">#模板制作</span><br><span class="line">dist &#x3D; &#123;&#125;</span><br><span class="line">for i, c in enumerate(refCnt):</span><br><span class="line">    x, y, w, h &#x3D; cv2.boundingRect(np.array(c))</span><br><span class="line">    roi &#x3D; ref[y:y+h, x:x+w]</span><br><span class="line">    roi &#x3D; cv2.resize(roi, (57, 88))</span><br><span class="line">    dist[i] &#x3D; roi</span><br><span class="line"></span><br><span class="line">#图像处理</span><br><span class="line">image &#x3D; cv2.imread(&#39;2.jpg&#39;)</span><br><span class="line">image &#x3D; cv2.resize(image, (250, 213))</span><br><span class="line">cv_show(&#39;image&#39;, image)</span><br><span class="line">image1 &#x3D; cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)</span><br><span class="line">cv_show(&#39;image2&#39;, image1)</span><br><span class="line">#顶帽</span><br><span class="line">tophat &#x3D; cv2.morphologyEx(image1, cv2.MORPH_TOPHAT, kernel&#x3D;None)</span><br><span class="line">cv_show(&#39;tophat&#39;, tophat)</span><br><span class="line">#边沿检测</span><br><span class="line">grapx &#x3D; cv2.Canny(tophat, 50, 100)#canny算法</span><br><span class="line">#sobel算法</span><br><span class="line"># grapx &#x3D; cv2.Sobel(tophat, ddepth&#x3D;cv2.CV_32F, dx&#x3D;1, dy&#x3D;0, ksize&#x3D;-1)</span><br><span class="line"># grapx &#x3D; np.absolute(grapx)</span><br><span class="line"># (minVal, maxVal) &#x3D; (np.min(grapx), np.max(grapx))</span><br><span class="line"># grapx &#x3D; (255*((grapx-minVal)&#x2F;(maxVal-minVal)))</span><br><span class="line"># grapx &#x3D; grapx.astype(&quot;uint8&quot;)</span><br><span class="line">print(np.array(grapx).shape)</span><br><span class="line">cv_show(&#39;grapx&#39;, grapx)</span><br><span class="line">#闭操作，先膨胀，再腐蚀</span><br><span class="line">grapx &#x3D; cv2.morphologyEx(grapx, cv2.MORPH_CLOSE, kernel&#x3D;cv2.getStructuringElement(cv2.MORPH_RECT, (6, 3)))</span><br><span class="line">cv_show(&#39;grapx&#39;, grapx)</span><br><span class="line">thresh &#x3D; cv2.threshold(grapx, 0, 255, cv2.THRESH_BINARY | cv2.THRESH_OTSU)[1]</span><br><span class="line">cv_show(&#39;thresh&#39;, thresh)</span><br><span class="line">thresh &#x3D; cv2.morphologyEx(thresh, cv2.MORPH_CLOSE, kernel&#x3D;cv2.getStructuringElement(cv2.MORPH_RECT, (6, 5)))</span><br><span class="line">cv_show(&#39;thresh&#39;, thresh)</span><br><span class="line">#计算轮廓</span><br><span class="line">threshCnt, hiet &#x3D; cv2.findContours(thresh.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)</span><br><span class="line">cnts &#x3D; threshCnt</span><br><span class="line">cur_img &#x3D; image.copy()</span><br><span class="line">cv2.drawContours(cur_img, cnts, -1, (0, 0, 255), 1)</span><br><span class="line">cv_show(&#39;img&#39;, cur_img)</span><br><span class="line">#提取轮廓</span><br><span class="line">locs &#x3D; []</span><br><span class="line">for (i, c) in enumerate(cnts):</span><br><span class="line">    (x, y, w, h) &#x3D; cv2.boundingRect(c)</span><br><span class="line">    ar &#x3D; w &#x2F; float(h)</span><br><span class="line">    if 2.5 &lt; ar &lt; 4.0 and (40 &lt; w &lt; 55) and (10 &lt; h &lt; 20):</span><br><span class="line">        locs.append((x, y, w, h))</span><br><span class="line">        # group &#x3D; image1[y:y+h, x:x+w]</span><br><span class="line">        # cv_show(&#39;group&#39;, group)</span><br><span class="line">#检测每个轮廓的数字</span><br><span class="line">locs &#x3D; sorted(locs, key&#x3D;lambda x: x[0])</span><br><span class="line">output &#x3D; []</span><br><span class="line">for (i, (gx, gy, gw, gh)) in enumerate(locs):</span><br><span class="line">    groupout &#x3D; []</span><br><span class="line">    group &#x3D; image1[gy:gy+gh, gx:gx+gw]</span><br><span class="line">    #计算每组轮廓</span><br><span class="line">    group &#x3D; cv2.threshold(group, 0, 255, cv2.THRESH_BINARY | cv2.THRESH_OTSU)[1]</span><br><span class="line">    digit, hier &#x3D; cv2.findContours(group.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)</span><br><span class="line">    digit &#x3D; utils.sort_contours(digit, method&#x3D;&#39;left-to-right&#39;)[0]</span><br><span class="line">    #计算每个数字</span><br><span class="line">    for c in digit:</span><br><span class="line">        (x, y, w, h) &#x3D; cv2.boundingRect(c)</span><br><span class="line">        roi &#x3D; group[y:y+h, x:x+w]</span><br><span class="line">        roi &#x3D; cv2.resize(roi, (57, 88))</span><br><span class="line">        scores &#x3D; []</span><br><span class="line">        for (d, droi) in dist.items():</span><br><span class="line">            result &#x3D; cv2.matchTemplate(roi, droi, cv2.TM_CCOEFF)</span><br><span class="line">            (_, score, _, _) &#x3D; cv2.minMaxLoc(result)</span><br><span class="line">            scores.append(score)</span><br><span class="line">        #得到最合适的数字</span><br><span class="line">        groupout.append(str(np.argmax(scores)))</span><br><span class="line">    output.append(groupout)</span><br><span class="line">#结果</span><br><span class="line">print(output)</span><br><span class="line">cv_show(&#39;img&#39;, image)</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -433,7 +416,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/makefile/" rel="tag"># makefile</a>
+            <a href="/tags/python-opencv/" rel="tag"># -python -opencv</a>
           
         </div>
       
@@ -446,8 +429,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2020/02/25/c-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="next" title="c++学习笔记">
-                <i class="fa fa-chevron-left"></i> c++学习笔记
+              <a href="/2020/04/15/makefile%E7%BC%96%E5%86%99/" rel="next" title="makefile编写">
+                <i class="fa fa-chevron-left"></i> makefile编写
               </a>
             
           </div>
@@ -455,10 +438,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2020/04/15/%E4%BF%A1%E7%94%A8%E5%8D%A1%E5%8F%B7%E7%A0%81%E8%AF%86%E5%88%AB%E6%A1%88%E4%BE%8B-python/" rel="prev" title="信用卡号码识别案例(python)">
-                信用卡号码识别案例(python) <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -623,7 +602,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#makefile编写"><span class="nav-number">1.</span> <span class="nav-text">makefile编写</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#makefile基本格式"><span class="nav-number">1.1.</span> <span class="nav-text">makefile基本格式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#多个文件编译"><span class="nav-number">1.2.</span> <span class="nav-text">多个文件编译</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#删除-o文件和可执行程序"><span class="nav-number">1.3.</span> <span class="nav-text">删除.o文件和可执行程序</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#设置变量"><span class="nav-number">1.4.</span> <span class="nav-text">设置变量</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#信用卡号码识别"><span class="nav-number">1.</span> <span class="nav-text">信用卡号码识别</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#utils"><span class="nav-number">1.1.</span> <span class="nav-text">utils</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#主程序"><span class="nav-number">1.2.</span> <span class="nav-text">主程序</span></a></li></ol></li></ol></div>
             
 
           </div>
